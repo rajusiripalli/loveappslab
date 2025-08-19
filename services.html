@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Our Services - Web & Mobile App Development Company in Visakhapatnam |
+      LoveAppsLab
+    </title>
+    <meta
+      name="description"
+      content="Discover LoveAppsLab services in Visakhapatnam - Web Development, Mobile App Development, UI/UX Design, and Custom Software Solutions. We help businesses grow with modern digital solutions."
+    />
+    <meta
+      name="keywords"
+      content="Web Development Visakhapatnam, Mobile App Development Vizag, UI/UX Design Vizag, IT Services Visakhapatnam, Software Development Vizag, LoveAppsLab Services"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .page-header-bg {
+        background-image: linear-gradient(
+            rgba(8, 102, 255, 0.8),
+            rgba(8, 102, 255, 0.8)
+          ),
+          url("img/1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .brand-blue {
+        color: #0866ff;
+      }
+      .bg-brand-blue {
+        background-color: #0866ff;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Special Nav Hover Effect */
+      header nav a {
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+      header nav a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      /* Services Toggle Styles */
+      .service-toggle {
+        transition: all 0.3s ease;
+      }
+      .service-toggle.active {
+        background-color: #0866ff;
+        color: white;
+        transform: translateX(5px);
+      }
+      .service-toggle.active i {
+        color: white;
+      }
+      .service-content {
+        display: none;
+      }
+      .service-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-brand-blue shadow-md sticky top-0 z-50 text-white">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="index.html">
+          <img
+            src="img/logo.svg"
+            alt="Loveappslab.com Logo"
+            class="h-8 w-auto"
+          />
+        </a>
+        <nav class="hidden md:flex space-x-2">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-blue px-6 pt-2 pb-4"
+      >
+        <a href="index.html" class="block py-2 hover:text-gray-200">Home</a>
+        <a href="about.html" class="block py-2 hover:text-gray-200">About</a>
+        <a href="services.html" class="block py-2 hover:text-gray-200"
+          >Services</a
+        >
+        <a href="contact.html" class="block py-2 hover:text-gray-200"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="page-header-bg py-20 md:py-28 text-white">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold fade-in">Our Services</h1>
+          <p
+            class="text-lg text-gray-200 mt-2 fade-in"
+            style="transition-delay: 200ms"
+          >
+            Tailored solutions to bring your digital ideas to life.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Content Section -->
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col md:flex-row gap-8 lg:gap-12">
+            <!-- Left Side: Toggle Buttons -->
+            <div class="md:w-1/3 lg:w-1/4">
+              <div
+                id="services-nav"
+                class="bg-gray-50 rounded-lg p-4 space-y-2"
+              >
+                <button
+                  data-target="web-dev"
+                  class="service-toggle active w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fas fa-laptop-code brand-blue w-6 mr-3"></i> Web
+                  Development
+                </button>
+                <button
+                  data-target="android-dev"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fab fa-android brand-blue w-6 mr-3"></i> Android
+                  Development
+                </button>
+                <button
+                  data-target="ios-dev"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fab fa-apple brand-blue w-6 mr-3"></i> iOS
+                  Development
+                </button>
+                <button
+                  data-target="hybrid-dev"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fas fa-mobile-alt brand-blue w-6 mr-3"></i> Hybrid
+                  Development
+                </button>
+                <button
+                  data-target="startup-dev"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fas fa-rocket brand-blue w-6 mr-3"></i> Startup
+                  Development
+                </button>
+                <button
+                  data-target="enterprise-dev"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fas fa-building brand-blue w-6 mr-3"></i> Enterprise
+                  Development
+                </button>
+                <button
+                  data-target="support"
+                  class="service-toggle w-full text-left font-semibold p-4 rounded-lg flex items-center"
+                >
+                  <i class="fas fa-headset brand-blue w-6 mr-3"></i> Support &
+                  Maintenance
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Side: Content Display -->
+            <div id="services-content" class="md:w-2/3 lg:w-3/4">
+              <!-- Web Development Content -->
+              <div id="web-dev" class="service-content active fade-in">
+                <img
+                  src="img/2.jpg"
+                  alt="Web Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  Web Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  We build modern, responsive, and scalable web applications
+                  that provide seamless user experiences. From corporate
+                  websites to complex e-commerce platforms, our solutions are
+                  engineered for performance and growth.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Custom Website Design & Development</li>
+                  <li>E-commerce Solutions & Marketplaces</li>
+                  <li>Content Management Systems (CMS)</li>
+                  <li>Progressive Web Apps (PWAs)</li>
+                  <li>API Development & Integration</li>
+                </ul>
+              </div>
+
+              <!-- Android Development Content -->
+              <div id="android-dev" class="service-content fade-in">
+                <img
+                  src="img/3.jpg"
+                  alt="Android Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  Android Apps Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  We create high-performance native Android applications that
+                  leverage the full power of the Android platform. Our apps are
+                  designed to be fast, intuitive, and visually appealing,
+                  delivering a top-tier experience to your users.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Native Android App Development (Kotlin/Java)</li>
+                  <li>Custom UI/UX Design for Android</li>
+                  <li>App Testing and Quality Assurance</li>
+                  <li>Google Play Store Deployment</li>
+                  <li>Integration with Wear OS and Android TV</li>
+                </ul>
+              </div>
+
+              <!-- iOS Development Content -->
+              <div id="ios-dev" class="service-content fade-in">
+                <img
+                  src="img/4.jpg"
+                  alt="iOS Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  iOS Apps Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Our team builds elegant and powerful native iOS applications
+                  for iPhone, iPad, and Apple Watch. We follow Apple's design
+                  guidelines to create apps that are not only functional but
+                  also feel right at home on any Apple device.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Native iOS App Development (Swift/Objective-C)</li>
+                  <li>User Interface Design for Apple Devices</li>
+                  <li>App Store Submission and Review</li>
+                  <li>Performance Optimization</li>
+                  <li>Integration with Apple Ecosystem (iCloud, Apple Pay)</li>
+                </ul>
+              </div>
+
+              <!-- Hybrid Development Content -->
+              <div id="hybrid-dev" class="service-content fade-in">
+                <img
+                  src="img/5.jpg"
+                  alt="Hybrid Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  Hybrid Apps Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Reach a wider audience with a single codebase. Our hybrid
+                  apps, built with technologies like React Native, offer a
+                  near-native experience on both iOS and Android, saving you
+                  time and development costs.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Cross-Platform Development with React Native</li>
+                  <li>Single Codebase for iOS and Android</li>
+                  <li>Cost-Effective and Faster Development Cycle</li>
+                  <li>Access to Native Device Features</li>
+                  <li>Simplified Maintenance and Updates</li>
+                </ul>
+              </div>
+
+              <!-- Startup Development Content -->
+              <div id="startup-dev" class="service-content fade-in">
+                <img
+                  src="img/6.jpg"
+                  alt="Startup Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  Startup App Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  We partner with startups to turn innovative ideas into
+                  market-ready products. From MVP development to scalable
+                  solutions, we provide the technical expertise and strategic
+                  guidance to help you launch and grow.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Minimum Viable Product (MVP) Development</li>
+                  <li>Scalable Architecture for Future Growth</li>
+                  <li>Agile Development for Fast Iteration</li>
+                  <li>Technology Consulting and Roadmapping</li>
+                  <li>Lean and Efficient Product Development</li>
+                </ul>
+              </div>
+
+              <!-- Enterprise Development Content -->
+              <div id="enterprise-dev" class="service-content fade-in">
+                <img
+                  src="img/7.jpg"
+                  alt="Enterprise Development"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  Enterprise App Development
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  We build robust, secure, and scalable applications for large
+                  organizations. Our enterprise solutions are designed to
+                  streamline complex business processes, improve efficiency, and
+                  integrate seamlessly with existing systems.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Custom Software for Business Processes</li>
+                  <li>CRM and ERP System Integration</li>
+                  <li>Data Security and Compliance</li>
+                  <li>Scalable Cloud-Based Solutions</li>
+                  <li>Legacy System Modernization</li>
+                </ul>
+              </div>
+
+              <!-- Support & Maintenance Content -->
+              <div id="support" class="service-content fade-in">
+                <img
+                  src="https://placehold.co/1200x500/e0e7ff/333333?text=Support"
+                  alt="Support & Maintenance"
+                  class="rounded-lg shadow-xl w-full h-64 object-cover mb-6"
+                />
+                <h2 class="text-3xl font-bold brand-blue mb-4">
+                  App Support & Maintenance
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Our relationship doesn't end at launch. We provide ongoing
+                  support and maintenance services to ensure your application
+                  remains secure, up-to-date, and optimized for performance as
+                  technology and user needs evolve.
+                </p>
+                <h3 class="text-xl font-bold mb-3">What We Offer:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Regular Updates and Bug Fixes</li>
+                  <li>Performance Monitoring and Optimization</li>
+                  <li>Security Audits and Patching</li>
+                  <li>Feature Enhancements and Upgrades</li>
+                  <li>Dedicated Technical Support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left"
+        >
+          <!-- About Section -->
+          <div>
+            <a href="index.html">
+              <img
+                src="img/logo.svg"
+                alt="Loveappslab.com Logo"
+                class="h-8 w-auto mb-4"
+              />
+            </a>
+            <p class="text-gray-400 mb-4">
+              We are a passionate team of developers and designers creating
+              high-quality digital products to help businesses succeed in the
+              modern world.
+            </p>
+            <div class="flex space-x-4 justify-center md:justify-start">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-facebook-f text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-linkedin-in text-xl"></i
+              ></a>
+              <a
+                href="https://wa.me/7794945385"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-whatsapp text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-white transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Contact Us</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-map-marker-alt mr-2"></i>Dwarakanagar,
+                Visakhapatnam
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-phone-alt mr-2"></i
+                ><a href="tel:7794945385" class="hover:text-white"
+                  >7794945385</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-envelope mr-2"></i
+                ><a
+                  href="mailto:rajusiripalli7@gmail.com"
+                  class="hover:text-white"
+                  >rajusiripalli7@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+          <p>&copy; 2025 Loveappslab.com. All Rights Reserved.</p>
+          <p class="text-sm mt-2">
+            Designed BY:
+            <a
+              href="https://loveappslab.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white underline"
+              >LoveAppsLab</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/7794945385"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Services Toggle Logic
+      const servicesNav = document.getElementById("services-nav");
+      const serviceToggles = servicesNav.querySelectorAll(".service-toggle");
+      const serviceContents = document.querySelectorAll(".service-content");
+
+      servicesNav.addEventListener("click", (e) => {
+        const toggle = e.target.closest(".service-toggle");
+        if (!toggle) return;
+
+        // Update active button
+        serviceToggles.forEach((btn) => btn.classList.remove("active"));
+        toggle.classList.add("active");
+
+        // Update active content
+        const targetId = toggle.dataset.target;
+        serviceContents.forEach((content) => {
+          if (content.id === targetId) {
+            content.classList.add("active");
+          } else {
+            content.classList.remove("active");
+          }
+        });
+      });
+
+      // Fade-in animation on scroll
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>

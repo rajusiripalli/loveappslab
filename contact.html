@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Contact LoveAppsLab - Web & Mobile App Development Company in
+      Visakhapatnam
+    </title>
+    <meta
+      name="description"
+      content="Get in touch with LoveAppsLab, a Web & Mobile App Development company in Visakhapatnam, India. Contact us today for websites, mobile apps, and digital solutions."
+    />
+    <meta
+      name="keywords"
+      content="Contact LoveAppsLab, Web Development Company Visakhapatnam, Mobile App Developers Vizag, IT Company in Visakhapatnam, Website Design Vizag"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .page-header-bg {
+        background-image: linear-gradient(
+            rgba(8, 102, 255, 0.8),
+            rgba(8, 102, 255, 0.8)
+          ),
+          url("img/1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .brand-blue {
+        color: #0866ff;
+      }
+      .bg-brand-blue {
+        background-color: #0866ff;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Special Nav Hover Effect */
+      header nav a {
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+      header nav a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-brand-blue shadow-md sticky top-0 z-50 text-white">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="index.html">
+          <img
+            src="img/logo.svg"
+            alt="Loveappslab.com Logo"
+            class="h-8 w-auto"
+          />
+        </a>
+        <nav class="hidden md:flex space-x-2">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-blue px-6 pt-2 pb-4"
+      >
+        <a href="index.html" class="block py-2 hover:text-gray-200">Home</a>
+        <a href="about.html" class="block py-2 hover:text-gray-200">About</a>
+        <a href="services.html" class="block py-2 hover:text-gray-200"
+          >Services</a
+        >
+        <a href="contact.html" class="block py-2 hover:text-gray-200"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <section class="page-header-bg py-20 md:py-28 text-white">
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold fade-in">Contact Us</h1>
+          <p
+            class="text-lg text-gray-200 mt-2 fade-in"
+            style="transition-delay: 200ms"
+          >
+            We're here to help. Let's build something amazing together.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Details Section -->
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold brand-blue mb-6">
+              Contact Information
+            </h2>
+            <p class="text-gray-600 mb-12">
+              Have a question or a project in mind? Feel free to reach out to us
+              directly through any of the channels below. We look forward to
+              hearing from you!
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Address Card -->
+            <div
+              class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              <i class="fas fa-map-marker-alt text-4xl brand-blue mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">Our Address</h3>
+              <p class="text-gray-600">Dwarakanagar, Visakhapatnam</p>
+            </div>
+            <!-- Email Card -->
+            <div
+              class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              style="transition-delay: 150ms"
+            >
+              <i class="fas fa-envelope text-4xl brand-blue mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+              <a
+                href="mailto:rajusiripalli7@gmail.com"
+                class="text-gray-600 hover:brand-blue"
+                >rajusiripalli7@gmail.com</a
+              >
+            </div>
+            <!-- Phone Card -->
+            <div
+              class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              style="transition-delay: 300ms"
+            >
+              <i class="fas fa-phone-alt text-4xl brand-blue mb-4"></i>
+              <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+              <a href="tel:7794945385" class="text-gray-600 hover:brand-blue"
+                >7794945385</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left"
+        >
+          <!-- About Section -->
+          <div>
+            <a href="index.html">
+              <img
+                src="img/logo.svg"
+                alt="Loveappslab.com Logo"
+                class="h-8 w-auto mb-4"
+              />
+            </a>
+            <p class="text-gray-400 mb-4">
+              We are a passionate team of developers and designers creating
+              high-quality digital products to help businesses succeed in the
+              modern world.
+            </p>
+            <div class="flex space-x-4 justify-center md:justify-start">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-facebook-f text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-linkedin-in text-xl"></i
+              ></a>
+              <a
+                href="https://wa.me/7794945385"
+                target="_blank"
+                class="text-gray-400 hover:text-white transition-colors"
+                ><i class="fab fa-whatsapp text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="index.html" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-white transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Contact Us</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-map-marker-alt mr-2"></i>Dwarakanagar,
+                Visakhapatnam
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-phone-alt mr-2"></i
+                ><a href="tel:7794945385" class="hover:text-white"
+                  >7794945385</a
+                >
+              </li>
+              <li class="flex items-center justify-center md:justify-start">
+                <i class="fas fa-envelope mr-2"></i
+                ><a
+                  href="mailto:rajusiripalli7@gmail.com"
+                  class="hover:text-white"
+                  >rajusiripalli7@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+          <p>&copy; 2025 Loveappslab.com. All Rights Reserved.</p>
+          <p class="text-sm mt-2">
+            Designed BY:
+            <a
+              href="https://loveappslab.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white underline"
+              >LoveAppsLab</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/7794945385"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileNavLinks = document.querySelectorAll(
+        "#mobile-menu a, footer a"
+      );
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      });
+
+      // Fade-in animation on scroll
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>
